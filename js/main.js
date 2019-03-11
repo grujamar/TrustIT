@@ -1,6 +1,19 @@
 $(document).ready(function () {
     
+    //Header animation
+    function animateHeader() {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > 50) {
+            $('header').addClass('header-active py-1 py-lg-2').removeClass('py-2 py-lg-3');
+        } else {
+            $('header').removeClass('header-active py-1 py-lg-2').addClass('py-2 py-lg-3');
+        }
+    }
     
+    //animate toogler
+    $('.navbar-toggler').click(function(){
+        $(this).toggleClass('active');
+    });
     
     //FILL ELEMENTS DEPENDS OF CATEGORY
     $('[data-category]').each(function () {
@@ -40,9 +53,11 @@ $(document).ready(function () {
 
     }
 
+    animateHeader();
     animation();
 
     $(window).scroll(function () {
+        animateHeader();
         animation();
     });
     

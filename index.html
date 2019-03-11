@@ -32,6 +32,9 @@ and open the template in the editor.
 
         <!--external css, like plugins ...-->
         <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/form-validation.css" rel="stylesheet" type="text/css"/>
+        <link href="css/animation.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
 
         <!--theme css-->
         <link href="css/theme.css" rel="stylesheet" type="text/css"/>
@@ -39,12 +42,75 @@ and open the template in the editor.
     </head>
     <body>
         <!--header start-->
-        <header>
-
+        <header class="py-2 py-lg-3 fixed-top">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light px-0">
+                    <!--logo start-->
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" alt=""/>
+                    </a><!--logo end-->
+                    <!--Hamburger button-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button><!--Hamburger ends-->
+                    <!--navbar start-->
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="navbar-nav ml-auto mt-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">početna <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">o nama</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">delatnost</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">brošure</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">galerija</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">reference</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">kontakt</a>
+                            </li>
+                        </ul>
+                    </div><!--navbar end-->
+                </nav>
+            </div>
         </header><!--header end-->
         <!--main start-->
         <main>
-
+            <section class="lead-slider-wrapper">
+                <ul class="owl-carousel list-unstyled lead-slider">
+                    <li class="hello position-relative" style="background-image:linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(img/lead.jpg)">
+                        <div class="container">
+                            <h2 class="text-center text-white animation" data-animation="zoom">
+                                Skewed1 is a <span class="text-warning">slightly wonky</span> landing page template
+                            </h2>
+                        </div>
+                    </li>
+                    <li class="hello position-relative" style="background-image:linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(img/about.jpg)">
+                        <div class="container">
+                            <h2 class="text-center text-white">
+                                Skewed2 is a <span class="text-warning">slightly wonky</span> landing page template
+                            </h2>
+                        </div>
+                    </li>
+                    <li class="hello position-relative" style="background-image:linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(img/paralax.jpg)">
+                        <div class="container">
+                            <h2 class="text-center text-white">
+                                Skewed3 is a <span class="text-warning">slightly wonky</span> landing page template
+                            </h2>
+                        </div>
+                    </li>
+                </ul>
+            </section>
         </main><!--main end-->
         <!--footer start-->
         <footer>
@@ -59,6 +125,11 @@ and open the template in the editor.
 
         <!--Custom page js-->
         <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+        <script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
+
+        <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="js/counterup.js" type="text/javascript"></script>
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
 
         <!--All page js-->
         <script src="js/main.js" type="text/javascript"></script>

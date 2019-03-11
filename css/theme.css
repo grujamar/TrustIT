@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,700i&subset=latin-ext");
 html {
-  font-size: 14px; }
+  font-size: 13px; }
 
 img {
   max-width: 100%; }
+
+a, a:hover {
+  text-decoration: none; }
 
 .img-holder {
   position: relative;
@@ -27,6 +31,9 @@ img {
     left: 0;
     width: 100%; }
 
+@media (min-width: 768px) {
+  html {
+    font-size: 14px; } }
 /* Buzz Out */
 @-webkit-keyframes buzz {
   10% {
@@ -59,7 +66,6 @@ img {
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0); } }
-
 @keyframes buzz {
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
@@ -91,7 +97,6 @@ img {
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0); } }
-
 .buzz {
   display: block;
   vertical-align: middle;
@@ -122,7 +127,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 @-webkit-keyframes slideLeft {
   0% {
     opacity: 0;
@@ -130,7 +134,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 .slideLeft {
   animation-name: slideLeft;
   visibility: visible;
@@ -144,7 +147,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 @-webkit-keyframes slideRight {
   0% {
     opacity: 0;
@@ -152,7 +154,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 .slideRight {
   animation-name: slideRight;
   visibility: visible;
@@ -166,7 +167,6 @@ img {
   100% {
     opacity: 1;
     transform: translateY(0); } }
-
 @-webkit-keyframes slideUp {
   0% {
     opacity: 0;
@@ -174,7 +174,6 @@ img {
   100% {
     opacity: 1;
     transform: translateY(0); } }
-
 .slideUp {
   animation-name: slideUp;
   visibility: visible;
@@ -187,7 +186,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 @-webkit-keyframes slideDown {
   0% {
     opacity: 0;
@@ -195,7 +193,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 .slideDown {
   animation-name: slideDown;
   visibility: visible;
@@ -213,13 +210,11 @@ img {
     transform: scale(0); }
   100% {
     transform: scale(1); } }
-
 @-webkit-keyframes zoom {
   0% {
     transform: scale(0); }
   100% {
     transform: scale(1); } }
-
 .form-control-success,
 .form-control-warning,
 .form-control-danger {
@@ -285,3 +280,122 @@ img {
 
 .error-msg > * {
   color: #d9534f; }
+
+header {
+  background: rgba(10, 10, 10, 0.2);
+  transition: 0.5s linear; }
+  header .header-active {
+    background: rgba(0, 0, 0, 0.8); }
+  header .navbar-brand {
+    max-width: 50%; }
+  header .navbar-toggler {
+    border-color: #178ec6 !important;
+    overflow: hidden; }
+    header .navbar-toggler span {
+      display: block;
+      width: 32px;
+      height: 3px;
+      background: #178ec6;
+      margin: 5px 0;
+      position: relative;
+      transition: 0.5s linear; }
+    header .navbar-toggler.hover span {
+      background: #fff; }
+    header .navbar-toggler.active span:nth-of-type(2) {
+      opacity: 0;
+      transform: translateX(-100px); }
+    header .navbar-toggler.active span:nth-of-type(1) {
+      transform: rotate(45deg) translate(5px, 6px); }
+    header .navbar-toggler.active span:nth-of-type(3) {
+      transform: rotate(-45deg) translate(5px, -6px); }
+  header .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247, 204, 75, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+  header .navbar-nav li {
+    background: #fff;
+    border-bottom: 1px solid #178ec6;
+    text-align: center;
+    transition: 0.5s linear; }
+    header .navbar-nav li:last-of-type {
+      border-bottom: none; }
+    header .navbar-nav li:hover a, header .navbar-nav li a.active {
+      background: #178ec6; }
+    header .navbar-nav li a.nav-link {
+      text-transform: uppercase;
+      color: #000 !important;
+      font-family: "Roboto", sans-serif;
+      transition: 0.5s linear; }
+    header .navbar-nav li:hover a.nav-link, header .navbar-nav li a.active {
+      color: #fff !important; }
+  header #main-menu {
+    margin: 0 -15px; }
+
+@media (min-width: 768px) {
+  header {
+    background: rgba(10, 10, 10, 0.2); }
+    header .navbar-nav li {
+      background: transparent;
+      border-bottom: 2px solid transparent;
+      transition: 0.5s linear; }
+      header .navbar-nav li:hover a, header .navbar-nav li a.active {
+        background: transparent;
+        border-bottom: 2px solid #178ec6; }
+      header .navbar-nav li a.nav-link {
+        color: #fff !important;
+        transition: 0.5s linear; }
+      header .navbar-nav li:hover a.nav-link, header .navbar-nav li a.active {
+        color: #fff !important; }
+    header #main-menu {
+      margin: 0px; }
+    header .navbar-brand {
+      max-width: 130px; } }
+@media (min-width: 992px) {
+  header .navbar-brand {
+    max-width: 250px; }
+  header .navbar-nav li a {
+    padding: 5px 20px !important; } }
+.lead-slider-wrapper {
+  position: relative; }
+  .lead-slider-wrapper .hello {
+    padding: 200px 0;
+    background-size: cover;
+    background-position: center center; }
+    .lead-slider-wrapper .hello h2 {
+      font-family: 'PT Sans';
+      font-size: 40px !important; }
+  .lead-slider-wrapper:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: url("assets/bottom-right.png") no-repeat bottom center;
+    background-size: 100% 100%;
+    z-index: 10; }
+  .lead-slider-wrapper .owl-dots {
+    position: absolute;
+    bottom: 120px;
+    width: 100%;
+    left: 0; }
+  .lead-slider-wrapper .owl-carousel .owl-dots .owl-dot:hover span {
+    background: #fff; }
+  .lead-slider-wrapper .text-warning {
+    color: #f7cc4b !important; }
+  .lead-slider-wrapper .bg-warning {
+    background-color: #f7cc4b !important; }
+
+@media (min-width: 768px) {
+  .lead-slider-wrapper .hello h2 {
+    font-size: 60px !important; } }
+@media (min-width: 992px) {
+  .lead-slider-wrapper .hello {
+    padding: 300px 0; }
+  .lead-slider-wrapper:after {
+    height: 150px; }
+  .lead-slider-wrapper .owl-dots {
+    bottom: 200px; }
+  .lead-slider-wrapper .custom-padding {
+    padding: 100px 0 !important; } }
+
+/*# sourceMappingURL=theme.css.map */

@@ -1,1 +1,144 @@
+$header-bg-active : rgba(0,0,0,0.8);
+$header-bg-transparent: rgba(10,10,10,0.2);
+$header-text-and-border-color: #178ec6;
+
+header{
+    background: $header-bg-transparent;
+    transition: 0.5s linear;
+
+    .header-active{
+        background: $header-bg-active;
+    }
+
+    .navbar-brand{
+        max-width: 50%;
+    }
+    
+    //TOOGLER
+    .navbar-toggler{
+        border-color: $header-text-and-border-color !important;
+        overflow: hidden;
+
+        span{
+            display: block;
+            width: 32px;
+            height: 3px;
+            background: $header-text-and-border-color;
+            margin: 5px 0;
+            position: relative;
+            transition: 0.5s linear;
+        }
+
+        &.hover span{
+            background: $white;
+        }
+
+        &.active span:nth-of-type(2){
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        &.active span:nth-of-type(1){
+            transform: rotate(45deg) translate(5px , 6px);
+        }
+
+        &.active span:nth-of-type(3){
+            transform: rotate(-45deg) translate(5px , -6px);
+        }
+    }
+    
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247, 204, 75, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    //NAVBAR-NAV
+    .navbar-nav{
+        li{
+            background: #fff;
+            border-bottom: 1px solid $header-text-and-border-color;
+            text-align: center;
+            transition: 0.5s linear;
+
+            &:last-of-type{
+                border-bottom: none;
+            }
+            &:hover a, a.active{
+                background: $header-text-and-border-color;
+            }
+
+            a.nav-link{
+                text-transform: uppercase;
+                color:$black !important;
+                font-family: $font-roboto;
+                transition: 0.5s linear;
+            }
+
+            &:hover a.nav-link, a.active{
+                color:$white !important;
+            }
+        }
+    }
+
+    #main-menu{
+        margin: 0 -15px;
+    }
+
+}
+
+
+@media(min-width:768px){
+    header{
+        background: $header-bg-transparent;
+
+        .navbar-nav {
+            li{
+                background: transparent;
+                border-bottom: 2px solid transparent;
+                transition: 0.5s linear;
+
+                &:hover a, a.active{
+                    background: transparent;
+                    border-bottom: 2px solid $header-text-and-border-color;
+                }
+
+                a.nav-link{
+                    color:$white !important;
+                    transition: 0.5s linear;
+                }
+
+                &:hover a.nav-link, a.active{
+                    color:$white !important;
+                }
+            }
+        } 
+
+        #main-menu{
+            margin: 0px;
+        }
+
+        .navbar-brand{
+            max-width: 130px;
+        }
+    }
+}
+
+
+
+
+
+@media(min-width:992px){
+    header{
+        .navbar-brand{
+            max-width: 250px;
+        }
+
+        .navbar-nav{
+            li{
+                a{
+                    padding: 5px 20px !important;
+                } 
+            }
+        } 
+    }
+}
 
