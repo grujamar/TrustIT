@@ -1,19 +1,21 @@
-$header-bg-active : rgba(0,0,0,0.8);
+$header-bg-active : $black;
 $header-bg-transparent: rgba(10,10,10,0.2);
 $header-text-and-border-color: #178ec6;
+
+.header-active{
+    background: $header-bg-active;
+}
 
 header{
     background: $header-bg-transparent;
     transition: 0.5s linear;
 
-    .header-active{
-        background: $header-bg-active;
-    }
-
     .navbar-brand{
         max-width: 50%;
+        font-family: $font-pacifico;
+
     }
-    
+
     //TOOGLER
     .navbar-toggler{
         border-color: $header-text-and-border-color !important;
@@ -46,7 +48,7 @@ header{
             transform: rotate(-45deg) translate(5px , -6px);
         }
     }
-    
+
     .navbar-light .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247, 204, 75, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }

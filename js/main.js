@@ -4,9 +4,9 @@ $(document).ready(function () {
     function animateHeader() {
         var scrollTop = $(window).scrollTop();
         if (scrollTop > 50) {
-            $('header').addClass('header-active py-1 py-lg-2').removeClass('py-2 py-lg-3');
+            $('header').addClass('header-active py-1 py-lg-2').removeClass('py-2 py-lg-4');
         } else {
-            $('header').removeClass('header-active py-1 py-lg-2').addClass('py-2 py-lg-3');
+            $('header').removeClass('header-active py-1 py-lg-2').addClass('py-2 py-lg-4');
         }
     }
     
@@ -62,7 +62,21 @@ $(document).ready(function () {
     });
     
     
-    
+    //OWL CAROUSEL START HERE
+    if ($('.owl-carousel').length > 0) {
+
+        $('.lead-slider').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            nav:true,
+            navText:['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>']
+            
+
+        });//end lead-slider
+
+    }
     
     
 
