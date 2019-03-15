@@ -1,2 +1,110 @@
 
+$footer-bg-transparent: rgba(10,10,10,0.7);
+$footer-cover-bg1:#5cafd7;
+$footer-cover-bg: #10638a;
+
+
+footer{
+
+    background:$footer-bg-transparent;
+
+    .footer-logo{
+        font-family: $font-pacifico;
+        margin-top: 120px;
+        margin-bottom: 25px;
+    }
+
+    .footer-navigation{
+        li{
+            display: inline-block;
+
+            &:last-of-type a{
+                border-right: 1px solid transparent;
+            }
+
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color:white;
+                border-right: 1px solid #ccc;
+                font-size: 0.8rem;
+                padding:3px;
+                &:hover{
+                    color:$header-text-and-border-color;
+                }
+
+            }
+        }
+
+    }
+
+    .social-icons{
+        li{
+            display: inline-block;
+
+            .fa{
+                font-size: 2.5rem;
+                color: $white;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+    
+    .cover{
+        position: absolute;
+        top:0;
+        width: 100%;
+        
+        .cover-article,
+        .cover-article1{
+            background: $footer-cover-bg1;
+            p{
+                font-size: 1.5rem;
+            }
+            
+            .cover-link{
+                font-size: 2.5rem;
+            }
+            .fa{
+                font-size: 3rem;
+                text-align: center !important;
+            }
+        }
+        .cover-article1{
+            background: $footer-cover-bg;
+        }
+    }
+
+}
+
+@media(min-width:576px){
+    
+    footer{
+        
+        .footer-navigation{
+            li{
+                a{
+                    font-size: 1rem;
+                    padding:6px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px){
+    
+    footer{
+        
+        .footer-navigation{
+            li{
+                a{
+                    font-size: 1.2rem;
+                    padding:10px;
+                }
+            }
+        }
+    }
+}
 
