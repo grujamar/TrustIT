@@ -359,7 +359,7 @@ footer {
   background: rgba(10, 10, 10, 0.7); }
   footer .footer-logo {
     font-family: "Pacifico", cursive;
-    margin-top: 120px;
+    margin-top: 200px;
     margin-bottom: 25px; }
   footer .footer-navigation li {
     display: inline-block; }
@@ -390,25 +390,49 @@ footer {
       background: #5cafd7; }
       footer .cover .cover-article p,
       footer .cover .cover-article1 p {
-        font-size: 1.5rem; }
+        font-size: 1rem; }
       footer .cover .cover-article .cover-link,
       footer .cover .cover-article1 .cover-link {
-        font-size: 2.5rem; }
+        font-size: 2rem; }
       footer .cover .cover-article .fa,
       footer .cover .cover-article1 .fa {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center !important; }
     footer .cover .cover-article1 {
       background: #10638a; }
 
 @media (min-width: 576px) {
+  footer .footer-logo {
+    margin-top: 160px; }
   footer .footer-navigation li a {
     font-size: 1rem;
     padding: 6px; } }
 @media (min-width: 768px) {
+  footer .footer-logo {
+    margin-top: 120px; }
   footer .footer-navigation li a {
     font-size: 1.2rem;
     padding: 10px; } }
+@media (min-width: 992px) {
+  footer .cover .cover-article p,
+  footer .cover .cover-article1 p {
+    font-size: 1.2rem; }
+  footer .cover .cover-article .cover-link,
+  footer .cover .cover-article1 .cover-link {
+    font-size: 2.2rem; }
+  footer .cover .cover-article .fa,
+  footer .cover .cover-article1 .fa {
+    font-size: 2.8rem; } }
+@media (min-width: 1200px) {
+  footer .cover .cover-article p,
+  footer .cover .cover-article1 p {
+    font-size: 1.5rem; }
+  footer .cover .cover-article .cover-link,
+  footer .cover .cover-article1 .cover-link {
+    font-size: 2.5rem; }
+  footer .cover .cover-article .fa,
+  footer .cover .cover-article1 .fa {
+    font-size: 3rem; } }
 .lead-slider-wrapper {
   position: relative; }
   .lead-slider-wrapper .hello {
