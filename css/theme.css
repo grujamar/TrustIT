@@ -31,6 +31,16 @@ a, a:hover {
     left: 0;
     width: 100%; }
 
+.border-top-linear-gradient:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  border-style: solid;
+  border-image: linear-gradient(to right, #178ec6 60%, #f3f3f3 100%);
+  border-image-slice: 1; }
+
 @media (min-width: 768px) {
   html {
     font-size: 14px; } }
@@ -541,5 +551,65 @@ footer {
     bottom: 200px; }
   .lead-slider-wrapper .custom-padding {
     padding: 100px 0 !important; } }
+.partners .owl-carousel .owl-dots .owl-dot.active span,
+.partners .owl-carousel .owl-dots .owl-dot:hover span {
+  background: #178ec6; }
+.partners .owl-carousel .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 0px 7px;
+  background: #BABABA;
+  display: block;
+  transition: opacity 200ms ease 0s;
+  border-radius: 30px; }
+.partners .lineBefore:before {
+  content: '';
+  display: block;
+  width: 140px;
+  height: 2.5px;
+  background: #EAEAEA;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+.partners .line-left:before {
+  margin-right: 30px auto 0; }
+.partners .partners-tittle {
+  border-top: 3px solid rgba(138, 185, 87, 0.8);
+  background: linear-gradient(90deg, #FFFFFF 0%, #F3F3F3 100%); }
+  .partners .partners-tittle h2 {
+    padding: 11px;
+    color: #25282A;
+    font-size: 1.1rem; }
+.partners .partners-slider {
+  padding-top: 30px;
+  padding-bottom: 26px; }
+  .partners .partners-slider li {
+    position: relative; }
+    .partners .partners-slider li .slider-item {
+      border: 1px solid #5cafd7; }
+    .partners .partners-slider li:after {
+      content: '';
+      display: block;
+      width: 64px;
+      height: 64px;
+      top: 100%;
+      margin-left: 0;
+      border: 32px solid transparent;
+      border-top-color: #5cafd7; }
+  .partners .partners-slider .slider-item {
+    position: relative;
+    padding: 15px; }
+    .partners .partners-slider .slider-item h6 {
+      color: #7C7C7C;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      max-height: 6.0rem;
+      overflow: hidden; }
+.partners .img-partners {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=theme.css.map */

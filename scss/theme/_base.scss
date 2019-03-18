@@ -50,6 +50,22 @@ a, a:hover{
     }
 }
 
+$partners-linear-background-gray: rgba(243,243,243, 1);
+$partners-border-color-blue: #178ec6;
+
+.border-top-linear-gradient:before{
+    content: "";
+    position: absolute;
+    top:-3px;
+    width: 100%;
+    border-bottom: 1px solid transparent;
+    border-style: solid;
+    border-image: linear-gradient(to right, $partners-border-color-blue 60%, $partners-linear-background-gray 100%);
+    border-image-slice: 1;
+}
+
+
+
 @media(min-width:768px){
 
     html{

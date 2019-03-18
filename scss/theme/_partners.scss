@@ -1,0 +1,100 @@
+$partners-h5-color: #25282A;
+$partners-h6-color: #7C7C7C;
+$partners-triangle-color: $white;
+$partners-owl-carousel-default: #BABABA;
+$partners-apostroph-color: #178ec6;
+$line-color: #EAEAEA;
+$grid-slider-border-color: rgba(138,185,87, 0.8);
+$partners-bg-bolor: #F2F2F2;
+
+.partners{
+
+    .owl-carousel .owl-dots .owl-dot.active span, 
+    .owl-carousel .owl-dots .owl-dot:hover span {
+        background: $partners-apostroph-color;
+    }
+
+    .owl-carousel .owl-dots .owl-dot span {
+        width: 8px;
+        height: 8px;
+        margin: 0px 7px;
+        background: $partners-owl-carousel-default;
+        display: block;
+        transition: opacity 200ms ease 0s;
+        border-radius: 30px;
+    }
+
+
+    //LINE Before
+    .lineBefore:before{
+        content: '';
+        display: block;
+        width: 140px;
+        height: 2.5px;
+        background: $line-color;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .line-left:before{
+        margin-right: 30px auto 0;
+    }
+
+    .partners-tittle{
+        border-top: 3px solid $grid-slider-border-color;	
+        background: linear-gradient(90deg, #FFFFFF 0%, #F3F3F3 100%);
+
+        h2{
+            padding: 11px;
+            color: $partners-h5-color;	
+            font-size: 1.1rem;
+        }
+    }
+
+    .partners-slider{
+        padding-top: 30px;
+        padding-bottom: 26px;
+
+        li{
+            .slider-item{
+                border:1px solid $footer-cover-bg1;
+            }
+
+            position: relative;
+
+            &:after{
+                content: '';
+                display: block;
+                width: 64px;
+                height: 64px;
+                top:100%;
+                margin-left: 0;
+                border: 32px solid transparent;
+                border-top-color:$footer-cover-bg1;
+                //border:1px solid $header-text-and-border-color;
+            }
+        }
+
+        .slider-item{
+            position: relative;
+            padding: 15px;
+
+            h6{
+                color: $partners-h6-color;            	
+                font-size: 1rem;
+                line-height: 1.5rem;
+                max-height: 6.0rem;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .img-partners {
+        position: relative;
+        width:  100px;
+        height: 100px;
+        background-position: 50% 50%;
+        background-repeat:   no-repeat;
+        background-size:     cover;
+    }
+}

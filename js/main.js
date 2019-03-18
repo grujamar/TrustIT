@@ -72,10 +72,35 @@ $(document).ready(function () {
             autoplayHoverPause: true,
             nav:true,
             navText:['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>']
-            
-
         });//end lead-slider
-
+        
+        
+        //partners-slider
+        $('.partners-slider').owlCarousel({
+            items: 4,
+            dots:true,
+            loop:true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                450:{
+                    items: 2,
+                    margin: 30,
+                    slideBy: 2
+                },
+                576: {
+                    items: 2,
+                    margin: 30,
+                    slideBy: 2
+                },
+                992: {
+                    items: 4,
+                    margin: 30,
+                    slideBy: 4
+                }
+            }  
+        });//end partners-slider
     }
     
     
