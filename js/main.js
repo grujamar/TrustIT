@@ -103,7 +103,10 @@ $(document).ready(function () {
         });//end partners-slider
     }
     
-    
+    //TOOLTIP
+     $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 
 
 
