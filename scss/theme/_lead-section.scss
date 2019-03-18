@@ -78,23 +78,20 @@
 
     //BUTTON
     .btn-slider{
-        color: #fff;
+        color: $white;
         border: 2px solid rgba(255,255,255, .75);
         background: transparent;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
         border-radius: 2px;
-        height: auto;
-        padding: 8px 37px;
-        font-size: 12px;
-        font-weight: 400;
+        padding: 5px 15px;
+        font-weight: $font-weight-regular;
+        font-size: 0.9rem;
         text-transform: uppercase;
         text-decoration: none;
-        letter-spacing: 2px;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
-        transition: all .6s ease;
     }
     
     //NAV PREV AND NEXT
@@ -144,6 +141,11 @@
 @media(min-width:768px){
 
     .lead-slider-wrapper{
+        
+        .btn-slider{
+            padding: 8px 37px;
+        }
+        
         .hello{
             h2{
                 font-size: 3rem !important;

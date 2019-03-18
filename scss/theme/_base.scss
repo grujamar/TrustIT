@@ -13,6 +13,10 @@ a, a:hover{
 // Placeholder for image
 
 
+body{
+    position: relative;
+}
+
 .img-holder{
     position: relative;
     background: #ccc url('assets/logo-small.png') no-repeat center center;

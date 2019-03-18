@@ -8,7 +8,9 @@ $grid-slider-border-color: rgba(138,185,87, 0.8);
 $partners-bg-bolor: #F2F2F2;
 
 .partners-section{
-
+    
+    padding:50px 0;
+    
     .owl-carousel .owl-dots .owl-dot.active span, 
     .owl-carousel .owl-dots .owl-dot:hover span {
         background: $partners-apostroph-color;
@@ -97,4 +99,28 @@ $partners-bg-bolor: #F2F2F2;
         background-repeat:   no-repeat;
         background-size:     cover;
     }
+}
+
+@media(min-width:768px){
+
+    .partners-section{
+        padding:70px 0;
+    }
+
+}
+
+@media(min-width:992px){
+
+    .partners-section{
+        padding:90px 0;
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .partners-section{
+        padding:100px 0;
+    }
+
 }
