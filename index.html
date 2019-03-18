@@ -40,7 +40,7 @@ and open the template in the editor.
         <link href="css/theme.css" rel="stylesheet" type="text/css"/>
 
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#main-menu">
         <!--header start-->
         <header class="py-2 py-lg-4 fixed-top">
             <div class="container-fluid">
@@ -60,13 +60,13 @@ and open the template in the editor.
                     <div class="collapse navbar-collapse" id="main-menu">
                         <ul class="navbar-nav ml-auto mt-2">
                             <li class="nav-item">
-                                <a class="nav-link" href="#home">početna <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#main-menu">početna <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#about-us">o nama</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">delatnost</a>
+                                <a class="nav-link" href="#partners">partneri</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">brošure</a>
@@ -132,7 +132,7 @@ and open the template in the editor.
                 </ul>
             </section><!--lead slider end-->
             <!--partners section start-->
-            <section class="partners">
+            <section class="partners-section" id="partners">
                 <div class="container">
                     <div class="partners-tittle position-relative border-top-linear-gradient">
                         <h2 class="text-uppercase text-left mb-0">
@@ -214,12 +214,12 @@ and open the template in the editor.
                         <li data-category='#C41FC4'>
                             <div class="slider-item text-left bg-white">
                                 <a href="#">
-                                    <img src="img/partners/partneri-ATIZ.jpg" alt="Atiz" class="img-partners" data-toggle="tooltip" data-placement="bottom" title="BookSnap i BookDrive su skeneri knjiga do A2 formata firme ATIZ, 
+                                    <img src="img/partners/partneri-ATIZ.jpg" alt="Atiz" class="img-partners"/>
+                                </a>
+                                <h6 class="mb-0 lineBefore line-left" data-toggle="tooltip" data-placement="bottom" title="BookSnap i BookDrive su skeneri knjiga do A2 formata firme ATIZ, 
                                     a za kratko vreme su postali svetski hit za digitalizaciju arhivske 
                                     građe biblioteka, opština, javnih ustanova, itd. PIS d.o.o. je od 2007. 
-                                    godine zastupnik za firmu ATIZ."/>
-                                </a>
-                                <h6 class="mb-0 lineBefore line-left">
+                                    godine zastupnik za firmu ATIZ.">
                                     BookSnap i BookDrive su skeneri knjiga do A2 formata firme ATIZ, 
                                     a za kratko vreme su postali svetski hit za digitalizaciju arhivske 
                                     građe biblioteka, opština, javnih ustanova, itd. PIS d.o.o. je od 2007. 
@@ -278,6 +278,53 @@ and open the template in the editor.
                     </ul><!--SLIDER END--> 
                 </div>
             </section><!--partners section end-->
+            <!--contact start-->
+            <section class="contact-section" id="contact" style="background-image: linear-gradient(to right, rgba(160,160,160,0.55), rgba(160,160,160,0.55)), url(img/contact/background1.jpg)">
+                <div class="container">
+                    <h3 class="text-center dash mb-4 text-uppercase text-white">kontaktirajte nas</h3>
+                    <p class="mb-5 text-center text-white">
+                        Ukoliko ste zainteresovani za neku od naših usluga, slobodno nas kontaktirajte i odgovorićemo vam u najkraćem mogućem roku. 
+                    </p>
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <form class="contact-form" method="post" action="">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" value="" class="form-control" placeholder="Your name">
+                                            <div class="error-msg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" value="" class="form-control" placeholder="Email Address">
+                                            <div class="error-msg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Message"></textarea>
+                                            <div class="error-msg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-info px-5 text-uppercase">pošalji poruku</button>
+                                    </div>
+                                </div>
+                            </form>  
+                        </div>
+
+                        <div class="col-12 col-lg-5">
+                            <article>
+                                <p class="d-flex text-white"> <span class="fa fa-map-marker fa-2x mr-2"></span> TrustIT d.o.o. Simina 1, 11000 Beograd, Srbija
+                                </p>
+                                <p class="d-flex align-items-center text-white"><span class="fa fa-envelope-o fa-2x text-white mr-2"></span><a href="mailto:office@pis.rs" class="text-white">office@pis.rs</a></p>
+                                <p class="d-flex align-items-center text-white"><span class="fa fa-phone text-white fa-2x mr-2 text-white"></span>011 328 33 10</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section><!--contact end-->
         </main><!--main end-->
         <!--footer start-->
         <footer class="container-fluid">

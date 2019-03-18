@@ -107,6 +107,56 @@ $(document).ready(function () {
      $(function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
+    
+    
+    //CONTACT FORM
+    $(function () {
+        $(".contact-form").validate({
+            highlight: function (element) {
+                $(element).closest('.form-group').addClass("has-danger");
+                $(element).addClass("form-control-danger");
+            },
+            unhighlight: function (element) {
+                $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                $(element).removeClass('form-control-danger').addClass('form-control-success');
+            },
+            rules: {
+                
+                name:{
+                    required:true
+                },
+                
+                email:{
+                    required:true,
+                    email:true
+                }, 
+                message:{
+                    required:true
+                }
+
+
+            },
+            messages: {
+                name:{
+                    required:'The *Name field is required'
+                },
+                
+                email:{
+                    required: 'The *Email field is required',
+                    email:'Please enter a valid Email address!'
+                },
+                message:{
+                    required:'The *Message field is required'
+                }
+
+            },
+            errorElement: 'p',
+            errorPlacement: function (error, element) {
+                error.appendTo($(element).closest('.form-group').find('.error-msg'));
+            }
+
+        });
+    });
 
 
 

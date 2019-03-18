@@ -1,0 +1,62 @@
+
+.contact-section{
+
+    padding:50px 0;
+
+    p{
+        font-size: 1.1rem;
+    }
+
+    .contact-form {
+        .form-control{
+            border-radius: 0;
+
+            &:focus{
+                outline: none;
+                box-shadow: 0 0 2px  #ccc;
+                border-color: #ccc;
+
+            }
+        }
+
+        textarea{
+            height: 100px;
+            resize: none;
+        }
+
+        .fa{
+            width: 40px;
+            text-align: center;
+            color: $white;
+        }
+    }
+
+    .btn-info{
+        background: $footer-cover-bg1 !important;
+    }
+
+}
+
+@media(min-width:768px){
+
+    .contact-section{
+        padding:70px 0;
+    }
+
+}
+
+@media(min-width:992px){
+
+    .contact-section{
+        padding:90px 0;
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .contact-section{
+        padding:100px 0;
+    }
+
+}
