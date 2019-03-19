@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     //Header animation
     function animateHeader() {
         var scrollTop = $(window).scrollTop();
@@ -9,10 +9,26 @@ $(document).ready(function () {
             $('header').removeClass('header-active py-1 py-lg-2').addClass('py-2 py-lg-4');
         }
     }
-    
+
     //animate toogler
-    $('.navbar-toggler').click(function(){
+    $('.navbar-toggler').click(function () {
         $(this).toggleClass('active');
+    });
+
+    //BUTTON TO TOP
+    function buttonToTop() {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#scroll').fadeIn();
+            } else {
+                $('#scroll').fadeOut();
+            }
+        });
+    }
+   
+    $('#scroll').click(function () {
+        $("html, body").animate({scrollTop: 0}, 600);
+        return false;
     });
     
     //FILL ELEMENTS DEPENDS OF CATEGORY
@@ -20,10 +36,10 @@ $(document).ready(function () {
         var color = $(this).data('category');
         $(this).find('.category-bg').css('background', color);
         $(this).find('.category-border').css('border-color', color);
-        $(this).find('.category-color').css('color', color );
+        $(this).find('.category-color').css('color', color);
     });
-    
-    
+
+
     // EASE SCROLL
 
     $(document).on('click', 'a[href^="#"]', function (event) {
@@ -33,10 +49,10 @@ $(document).ready(function () {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 800);
     });
-    
-    
+
+
     //ANIMATION 
-    
+
     function animation() {
         var windowHight = $(window).height();
         var scroll = $(window).scrollTop();
@@ -53,15 +69,17 @@ $(document).ready(function () {
 
     }
 
+    buttonToTop();
     animateHeader();
     animation();
 
     $(window).scroll(function () {
+        buttonToTop();
         animateHeader();
         animation();
     });
-    
-    
+
+
     //OWL CAROUSEL START HERE
     if ($('.owl-carousel').length > 0) {
 
@@ -70,21 +88,21 @@ $(document).ready(function () {
             loop: true,
             autoplay: true,
             autoplayHoverPause: true,
-            nav:true,
-            navText:['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>']
+            nav: true,
+            navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>']
         });//end lead-slider
-        
-        
+
+
         //partners-slider
         $('.partners-slider').owlCarousel({
             items: 4,
-            dots:true,
-            loop:true,
+            dots: true,
+            loop: true,
             responsive: {
                 0: {
                     items: 1
                 },
-                450:{
+                450: {
                     items: 2,
                     margin: 30,
                     slideBy: 2
@@ -99,16 +117,16 @@ $(document).ready(function () {
                     margin: 30,
                     slideBy: 4
                 }
-            }  
+            }
         });//end partners-slider
     }
-    
+
     //TOOLTIP
-     $(function () {
+    $(function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
-    
-    
+
+
     //CONTACT FORM
     $(function () {
         $(".contact-form").validate({
@@ -121,32 +139,32 @@ $(document).ready(function () {
                 $(element).removeClass('form-control-danger').addClass('form-control-success');
             },
             rules: {
-                
-                name:{
-                    required:true
+
+                name: {
+                    required: true
                 },
-                
-                email:{
-                    required:true,
-                    email:true
-                }, 
-                message:{
-                    required:true
+
+                email: {
+                    required: true,
+                    email: true
+                },
+                message: {
+                    required: true
                 }
 
 
             },
             messages: {
-                name:{
-                    required:'The *Name field is required'
+                name: {
+                    required: 'The *Name field is required'
                 },
-                
-                email:{
+
+                email: {
                     required: 'The *Email field is required',
-                    email:'Please enter a valid Email address!'
+                    email: 'Please enter a valid Email address!'
                 },
-                message:{
-                    required:'The *Message field is required'
+                message: {
+                    required: 'The *Message field is required'
                 }
 
             },
