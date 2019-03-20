@@ -717,4 +717,39 @@ footer {
     font-size: 2.5rem;
     color: #ced4da; }
 
+.gallery-section .gallery-item figure {
+  position: relative; }
+  .gallery-section .gallery-item figure img {
+    width: 100%;
+    display: block; }
+.gallery-section .gallery-item .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .gallery-section .gallery-item .hover .fa {
+    border: 1px solid #15a4fa;
+    background: #15a4fa;
+    padding: 12px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none; }
+
+@media (min-width: 992px) {
+  .gallery-section .gallery-item figure {
+    overflow: hidden; }
+  .gallery-section .gallery-item .hover {
+    background: #15a4fa;
+    display: none !important; }
+  .gallery-section .gallery-item:hover .hover {
+    display: flex !important; }
+  .gallery-section .gallery-item .hover .fa {
+    border: 1px solid #fff;
+    opacity: 1;
+    transition: 0.3s ease; }
+    .gallery-section .gallery-item .hover .fa:hover {
+      background: rgba(255, 255, 255, 0.4); } }
+
 /*# sourceMappingURL=theme.css.map */
