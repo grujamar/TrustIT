@@ -25,12 +25,14 @@ $(document).ready(function () {
             }
         });
     }
-   
+    
+    
+    
     $('#scroll').click(function () {
         $("html, body").animate({scrollTop: 0}, 600);
         return false;
     });
-    
+    /*
     //FILL ELEMENTS DEPENDS OF CATEGORY
     $('[data-category]').each(function () {
         var color = $(this).data('category');
@@ -38,7 +40,7 @@ $(document).ready(function () {
         $(this).find('.category-border').css('border-color', color);
         $(this).find('.category-color').css('color', color);
     });
-
+    */
 
     // EASE SCROLL
 
@@ -88,8 +90,15 @@ $(document).ready(function () {
             loop: true,
             autoplay: true,
             autoplayHoverPause: true,
-            nav: true,
-            navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>']
+            responsive: {
+                0: {
+                    nav: false
+                },
+                576: {
+                    nav: true,
+                    navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>']
+                }
+            }
         });//end lead-slider
 
 

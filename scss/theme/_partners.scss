@@ -9,7 +9,8 @@ $partners-bg-bolor: #F2F2F2;
 
 .partners-section{
     
-    padding:50px 0;
+    background: #f5f5f5;
+    padding:30px 0;
     
     .owl-carousel .owl-dots .owl-dot.active span, 
     .owl-carousel .owl-dots .owl-dot:hover span {
@@ -104,7 +105,7 @@ $partners-bg-bolor: #F2F2F2;
 @media(min-width:768px){
 
     .partners-section{
-        padding:70px 0;
+        padding:50px 0;
     }
 
 }
@@ -112,7 +113,7 @@ $partners-bg-bolor: #F2F2F2;
 @media(min-width:992px){
 
     .partners-section{
-        padding:90px 0;
+        padding:70px 0;
     }
 
 }
@@ -120,7 +121,7 @@ $partners-bg-bolor: #F2F2F2;
 @media(min-width:1200px){
 
     .partners-section{
-        padding:100px 0;
+        padding:85px 0;
     }
 
 }

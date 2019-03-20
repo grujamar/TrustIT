@@ -17,8 +17,8 @@
         h2{
             font-size: 2.5rem;
             font-weight: $font-weight-regular;
-            line-height: 1.4;
-            letter-spacing: 0.7em;
+            line-height: 1;
+            letter-spacing: 0.2em;
         }
 
         h3{
@@ -26,7 +26,7 @@
             font-size: 1.5rem !important;
             margin-bottom: 70px;
         }
-        
+
         .text-warning{
             color:$header-text-and-border-color !important;
         }
@@ -93,14 +93,14 @@
         -moz-box-shadow: none;
         box-shadow: none;
     }
-    
+
     //NAV PREV AND NEXT
     .owl-nav{
         position: absolute;
         top:50%;
         left: 0;
         width: 100%;
-        
+
         .owl-prev{
             position: absolute;
             top:0;
@@ -110,9 +110,9 @@
             height: 40px;
             border: 2px solid $primary !important;
             //border-radius: 50%;
-            
+
         }
-        
+
         .owl-next{
             position: absolute;
             top:0;
@@ -123,14 +123,14 @@
             border: 2px solid $primary !important;
             //border-radius: 50%;
         }
-        
+
         .fa{
             line-height: 30px;
             color: $header-text-and-border-color !important;
             font-size: 2.5rem;
         }
     }
-    
+
 }
 
 
@@ -141,14 +141,16 @@
 @media(min-width:768px){
 
     .lead-slider-wrapper{
-        
+
         .btn-slider{
             padding: 8px 37px;
         }
-        
+
         .hello{
             h2{
                 font-size: 3rem !important;
+                line-height: 1.4;
+                letter-spacing: 0.7em;
             }
             h3, p{
                 font-size: 2rem !important;
@@ -175,7 +177,7 @@
         .custom-padding{
             padding: 100px 0 !important;
         }
-        
+
     }
 }
 

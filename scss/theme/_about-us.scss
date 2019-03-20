@@ -1,0 +1,42 @@
+//LINE After
+.lineAfter:after{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2.5px;
+    background: $header-text-and-border-color;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.line-center:after{
+    margin: 30px auto 30px;
+}
+
+.aboutUs-section{
+    
+    padding: 90px 0;
+    
+    h2{
+        font-family: $font-roboto;
+        font-weight: $font-weight-bold;
+    }
+    
+    p{
+        font-family: $font-roboto;
+        font-size: 1.1rem;
+    }
+    
+    .aboutUs-btn{
+        .btn-outline-info{
+            font-weight: $font-weight-bold !important;
+           
+        }
+    }
+    
+    .fa{
+        font-size: 2.5rem;
+        color: $gray-400;
+    }
+
+}

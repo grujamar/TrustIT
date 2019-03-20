@@ -46,7 +46,7 @@ and open the template in the editor.
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-light px-0">
                     <!--logo start-->
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="http://localhost:8383/TrustIT/index.html">
                         <!--<img src="img/logo.png" alt=""/>-->
                         <h1 class="text-white">TrustIT</h1>
                     </a><!--logo end-->
@@ -60,7 +60,7 @@ and open the template in the editor.
                     <div class="collapse navbar-collapse" id="main-menu">
                         <ul class="navbar-nav ml-auto mt-2">
                             <li class="nav-item">
-                                <a class="nav-link" href="#main-menu">početna <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#main-menu1">početna <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#about-us">o nama</a>
@@ -72,7 +72,7 @@ and open the template in the editor.
                                 <a class="nav-link" href="#">brošure</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">galerija</a>
+                                <a class="nav-link" href="#gallery">galerija</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">reference</a>
@@ -88,7 +88,7 @@ and open the template in the editor.
         <!--main start-->
         <main>
             <!--lead slider start-->
-            <section class="lead-slider-wrapper">
+            <section class="lead-slider-wrapper" id="main-menu1">
                 <ul class="owl-carousel list-unstyled lead-slider">
                     <li class="hello position-relative" style="background-image:linear-gradient(to right, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(img/slide-web-softver.jpg)">
                         <div class="container">
@@ -131,6 +131,74 @@ and open the template in the editor.
                     </li>
                 </ul>
             </section><!--lead slider end-->
+            <!--section about-us start-->
+            <section class="aboutUs-section" id="about-us">
+                <div class="container">
+                    <div class="aboutUs-tittle text-center">
+                        <h2 class="text-uppercase text-contact lineAfter line-center">
+                            o nama
+                        </h2>
+                    </div>
+                    <ul class="list-unstyled pb-4">
+                        <li>
+                            <div class="d-flex align-items-center">
+                                <span class="w-20 fa fa-id-card-o text-center">
+                                </span>
+                                <p class="w-80">
+                                    Naša kompanija, TrustIT d.o.o. se uspešno bavi razvojem, implementacijom, integracijom i 
+                                    održavanjem dokument menadžment, ECM i BPM sistema, rešenjima 
+                                    za arhiviranje i mikrofilmovanje dokumentacije, kao i rešenjima 
+                                    baziranim na Smart karticama.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex align-items-center">
+                                <span class="w-20 fa fa-desktop text-center">
+                                </span>
+                                <p class="w-80">
+                                    Misija kompanije TrustIT d.o.o. je da u budućnosti kao i do 
+                                    sada pruža visok kvalitet i pouzdanost svojih proizvoda i usluga 
+                                    i da trasira put razvoja informacionih tehnologija na domaćem i 
+                                    regionalnom tržištu kroz efikasnu komunikaciju i odgovore na 
+                                    zahteve svojih kupaca i poslovnih partnera.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex align-items-center">
+                                <span class="w-20 fa fa-laptop text-center">
+                                </span>
+                                <p class="w-80">
+                                    Vizija kompanije TrustIT d.o.o. je osvajanje vodećih 
+                                    tržišnih pozicija u oblastima fizičkog skladištenja 
+                                    papirne arhive, skeniranja dokumentacije, dokument 
+                                    menadžmenta, ECM – Enterpirse Content Managementa, 
+                                    BPM – Business Process Managementa, Smart kartica i 
+                                    sigurnosnih sistema baziranih na digitalnim sertifikatima.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex align-items-center">
+                                <span class="w-20 fa fa-id-card-o text-center">
+                                </span>
+                                <p class="w-80">
+                                    Delatnost naše kompanije obuhvata sve sfere ECM sistema za 
+                                    upravljanje i trajno arhiviranje dokumentacije, za automatizaciju 
+                                    i modelovanje poslovnih procesa, kao i sisteme za izradu i 
+                                    korišćenje Smart kartica. Dugi niz godina TrustIT d.o.o. predstavlja 
+                                    sigurnog i pouzdanog partnera za IT poslovanje sa velikim brojem 
+                                    referenci u Srbiji.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="aboutUs-btn text-center">
+                        <a href="#" class="btn btn-outline-info btn-lg px-5 text-uppercase">saznaj više</a>
+                    </div>
+                </div>
+            </section><!--section about-us end-->
             <!--partners section start-->
             <section class="partners-section" id="partners">
                 <div class="container">
@@ -337,10 +405,10 @@ and open the template in the editor.
                     <div class="col-md-12 text-center footer-navigation my-3">
                         <ul>
                             <li>
-                                <a href="#">početna</a>
+                                <a href="#main-menu1">početna</a>
                             </li>
                             <li>
-                                <a href="#">o nama</a>
+                                <a href="#about-us">o nama</a>
                             </li>
                             <li>
                                 <a href="#partners">partneri</a>
@@ -349,7 +417,7 @@ and open the template in the editor.
                                 <a href="#">brošure</a>
                             </li>
                             <li>
-                                <a href="#">galerija</a>
+                                <a href="#gallery">galerija</a>
                             </li>
                             <li>
                                 <a href="#">reference</a>

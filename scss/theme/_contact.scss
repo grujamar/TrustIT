@@ -1,3 +1,9 @@
+$contact-text-color: #444444;
+$contact-border-color: #cccccc;
+
+.text-contact{
+    color: $contact-text-color !important;
+}
 
 .contact-section{
 
@@ -13,8 +19,8 @@
 
             &:focus{
                 outline: none;
-                box-shadow: 0 0 2px  #ccc;
-                border-color: #ccc;
+                box-shadow: 0 0 3px  $contact-border-color;
+                border-color: $contact-border-color;
 
             }
         }
