@@ -50,7 +50,7 @@ $partners-bg-bolor: #d6d6d6;
         h2{
             padding: 11px;
             color: $partners-h5-color;	
-            font-size: 1.1rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -100,6 +100,12 @@ $partners-bg-bolor: #d6d6d6;
         background-repeat:   no-repeat;
         background-size:     cover;
     }
+    
+    .img-partners-aet {
+        width:  80% !important;
+        padding-left: 50px;
+    }
+    
 }
 
 @media(min-width:768px){

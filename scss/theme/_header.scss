@@ -9,9 +9,9 @@ $header-text-and-border-color: #178ec6;
 header{
     background: $header-bg-transparent;
     transition: 0.5s linear;
-
+    
     .navbar-brand{
-        max-width: 50%;
+        max-width: 170px;
         font-family: $font-pacifico;
     }
 
@@ -89,6 +89,9 @@ header{
 
 @media(min-width:768px){
     header{
+        .navbar-brand{
+            max-width: 170px;
+        }
         background: $header-bg-transparent;
 
         .navbar-nav {

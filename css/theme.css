@@ -332,7 +332,7 @@ header {
   background: rgba(10, 10, 10, 0.2);
   transition: 0.5s linear; }
   header .navbar-brand {
-    max-width: 50%;
+    max-width: 170px;
     font-family: "Pacifico", cursive; }
   header .navbar-toggler {
     border-color: #178ec6 !important;
@@ -378,6 +378,8 @@ header {
 @media (min-width: 768px) {
   header {
     background: rgba(10, 10, 10, 0.2); }
+    header .navbar-brand {
+      max-width: 170px; }
     header .navbar-nav li {
       background: transparent;
       border-bottom: 2px solid transparent;
@@ -617,7 +619,7 @@ footer {
     .partners-section .partners-tittle h2 {
       padding: 11px;
       color: #25282A;
-      font-size: 1.1rem; }
+      font-size: 1.5rem; }
   .partners-section .partners-slider {
     padding-top: 30px;
     padding-bottom: 26px; }
@@ -650,6 +652,9 @@ footer {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover; }
+  .partners-section .img-partners-aet {
+    width: 80% !important;
+    padding-left: 50px; }
 
 @media (min-width: 768px) {
   .partners-section {
@@ -707,18 +712,23 @@ footer {
 .aboutUs-section {
   padding: 90px 0; }
   .aboutUs-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Roboto", sans-serif;
     font-weight: 700; }
   .aboutUs-section p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.1rem; }
+    font-size: 0.85rem; }
   .aboutUs-section .aboutUs-btn .btn-outline-info {
     font-weight: 700 !important; }
   .aboutUs-section .fa {
     font-size: 2.5rem;
     color: #ced4da; }
 
+@media (min-width: 768px) {
+  .aboutUs-section h2 {
+    font-size: 2.5rem; }
+  .aboutUs-section p {
+    font-size: 1.1rem; } }
 .gallery-section {
   background: #F6F9F9; }
   .gallery-section .gallery-item figure {

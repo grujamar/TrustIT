@@ -14,30 +14,44 @@
 }
 
 .aboutUs-section{
-    
+
     padding: 90px 0;
-    
+
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-family: $font-roboto;
         font-weight: $font-weight-bold;
     }
-    
+
     p{
         font-family: $font-roboto;
-        font-size: 1.1rem;
+        font-size: 0.85rem;
     }
-    
+
     .aboutUs-btn{
         .btn-outline-info{
             font-weight: $font-weight-bold !important;
-           
+
         }
     }
-    
+
     .fa{
         font-size: 2.5rem;
         color: $gray-400;
     }
 
+}
+
+@media (min-width: 768px) {
+
+    .aboutUs-section{
+
+        h2{
+            font-size: 2.5rem;
+        }
+
+        p{
+            font-size: 1.1rem;
+        }
+    }
 }
