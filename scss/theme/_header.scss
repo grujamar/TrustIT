@@ -13,7 +13,6 @@ header{
     .navbar-brand{
         max-width: 50%;
         font-family: $font-pacifico;
-
     }
 
     //TOOGLER
@@ -119,7 +118,7 @@ header{
         }
 
         .navbar-brand{
-            max-width: 130px;
+            max-width: 100px;
         }
     }
 }
@@ -131,7 +130,7 @@ header{
 @media(min-width:992px){
     header{
         .navbar-brand{
-            max-width: 250px;
+            max-width: 170px;
         }
 
         .navbar-nav{

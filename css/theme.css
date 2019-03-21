@@ -393,18 +393,18 @@ header {
     header #main-menu {
       margin: 0px; }
     header .navbar-brand {
-      max-width: 130px; } }
+      max-width: 100px; } }
 @media (min-width: 992px) {
   header .navbar-brand {
-    max-width: 250px; }
+    max-width: 170px; }
   header .navbar-nav li a {
     padding: 5px 20px !important; } }
 footer {
   background: rgba(10, 10, 10, 0.7); }
-  footer .footer-logo {
-    font-family: "Pacifico", cursive;
-    margin-top: 200px;
-    margin-bottom: 25px; }
+  footer img {
+    padding-top: 180px;
+    padding-bottom: 25px;
+    max-width: 130px; }
   footer .footer-navigation li {
     display: inline-block; }
     footer .footer-navigation li:last-of-type a {
@@ -446,14 +446,15 @@ footer {
       background: #10638a; }
 
 @media (min-width: 576px) {
-  footer .footer-logo {
-    margin-top: 160px; }
+  footer img {
+    padding-top: 160px; }
   footer .footer-navigation li a {
     font-size: 1rem;
     padding: 6px; } }
 @media (min-width: 768px) {
-  footer .footer-logo {
-    margin-top: 120px; }
+  footer img {
+    padding-top: 120px;
+    max-width: 170px; }
   footer .footer-navigation li a {
     font-size: 1.2rem;
     padding: 10px; } }
@@ -587,7 +588,7 @@ footer {
   .lead-slider-wrapper .custom-padding {
     padding: 100px 0 !important; } }
 .partners-section {
-  background: #f5f5f5;
+  background: #d6d6d6;
   padding: 30px 0; }
   .partners-section .owl-carousel .owl-dots .owl-dot.active span,
   .partners-section .owl-carousel .owl-dots .owl-dot:hover span {
@@ -706,6 +707,7 @@ footer {
 .aboutUs-section {
   padding: 90px 0; }
   .aboutUs-section h2 {
+    font-size: 2.5rem;
     font-family: "Roboto", sans-serif;
     font-weight: 700; }
   .aboutUs-section p {
@@ -717,31 +719,33 @@ footer {
     font-size: 2.5rem;
     color: #ced4da; }
 
-.gallery-section .gallery-item figure {
-  position: relative; }
-  .gallery-section .gallery-item figure img {
+.gallery-section {
+  background: #F6F9F9; }
+  .gallery-section .gallery-item figure {
+    position: relative; }
+    .gallery-section .gallery-item figure img {
+      width: 100%;
+      display: block; }
+  .gallery-section .gallery-item .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: block; }
-.gallery-section .gallery-item .hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-  .gallery-section .gallery-item .hover .fa {
-    border: 1px solid #15a4fa;
-    background: #15a4fa;
-    padding: 12px;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 1rem;
-    text-decoration: none; }
+    height: 100%;
+    background: rgba(21, 164, 250, 0.7); }
+    .gallery-section .gallery-item .hover .fa {
+      border: 1px solid rgba(21, 164, 250, 0.7);
+      padding: 12px;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 1rem;
+      text-decoration: none; }
 
 @media (min-width: 992px) {
   .gallery-section .gallery-item figure {
     overflow: hidden; }
   .gallery-section .gallery-item .hover {
-    background: #15a4fa;
+    background: rgba(21, 164, 250, 0.7);
     display: none !important; }
   .gallery-section .gallery-item:hover .hover {
     display: flex !important; }
