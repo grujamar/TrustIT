@@ -25,22 +25,23 @@ $(document).ready(function () {
             }
         });
     }
-    
-    
-    
+
     $('#scroll').click(function () {
         $("html, body").animate({scrollTop: 0}, 600);
         return false;
     });
+
+
+
     /*
-    //FILL ELEMENTS DEPENDS OF CATEGORY
-    $('[data-category]').each(function () {
-        var color = $(this).data('category');
-        $(this).find('.category-bg').css('background', color);
-        $(this).find('.category-border').css('border-color', color);
-        $(this).find('.category-color').css('color', color);
-    });
-    */
+     //FILL ELEMENTS DEPENDS OF CATEGORY
+     $('[data-category]').each(function () {
+     var color = $(this).data('category');
+     $(this).find('.category-bg').css('background', color);
+     $(this).find('.category-border').css('border-color', color);
+     $(this).find('.category-color').css('color', color);
+     });
+     */
 
     // EASE SCROLL
 
@@ -56,19 +57,20 @@ $(document).ready(function () {
     //ANIMATION 
 
     function animation() {
-        var windowHight = $(window).height();
-        var scroll = $(window).scrollTop();
+
+        var windowHeight = $(window).height();
+        var scrollDown = $(window).scrollTop();
+
         $('.animation').each(function () {
             var position = $(this).offset().top;
-            var animation = $(this).attr('data-animation');
-            //var delay = $(this).attr('data-delay');
-            if (position < scroll + windowHight - 60) {
-                $(this).addClass(animation);
-                //$(this).css('animation-delay', delay);
-            }
-            console.log(position);
-        });
 
+            if (position < scrollDown + windowHeight-60) {
+                var animacija = $(this).attr('data-animation');
+                var delay = $(this).attr('data-delay');
+                $(this).css('animation-delay', delay);
+                $(this).addClass(animacija);
+            }
+        });
     }
 
     buttonToTop();

@@ -643,7 +643,7 @@ footer {
         color: #7C7C7C;
         font-size: 1rem;
         line-height: 1.5rem;
-        max-height: 6.0rem;
+        max-height: 9.0rem;
         overflow: hidden; }
   .partners-section .img-partners {
     position: relative;
@@ -765,5 +765,27 @@ footer {
     transition: 0.3s ease; }
     .gallery-section .gallery-item .hover .fa:hover {
       background: rgba(255, 255, 255, 0.4); } }
+.get-started {
+  padding: 100px 0; }
+  .get-started .get-started-wrap h2 {
+    font-size: 1.75rem;
+    font-weight: 700; }
+  .get-started .get-started-paragraph {
+    width: 80%;
+    margin: 0 auto; }
+    .get-started .get-started-paragraph p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 24px; }
+  .get-started .get-started-button a {
+    background-color: #fff;
+    border-radius: 0;
+    width: 189px;
+    padding: 6px 12px;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=theme.css.map */
