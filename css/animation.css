@@ -135,7 +135,7 @@
     animation-name: slideLeft;
     visibility:visible;
     animation-duration: 1s;
-    opacity: 1;
+    opacity: 0;
 }
 
 
@@ -164,7 +164,7 @@
     animation-name: slideRight;
     visibility:visible;
     animation-duration: 1s;
-    opacity: 1;
+    opacity: 0;
 }
 
 @keyframes slideUp {

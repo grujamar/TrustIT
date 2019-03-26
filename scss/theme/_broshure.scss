@@ -1,0 +1,50 @@
+
+$grid-slider-border-color: rgba(138,185,87, 0.8);
+
+.broshure-section{
+    
+    padding:30px 0;
+    
+    .brochure-tittle{
+        border-top: 3px solid $grid-slider-border-color;	
+        background: linear-gradient(90deg, #c1c1c1 0%, #ffffff 100%);
+
+        h2{
+            padding: 11px;
+            color: $partners-h5-color;	
+            font-size: 1.5rem;
+        }
+    }
+    
+    .broshure-article{
+        a{
+            img{
+               box-shadow: 10px 10px 5px #888; 
+            }
+        }  
+    }
+}
+
+@media(min-width:768px){
+
+    .broshure-section{
+        padding:50px 0;
+    }
+
+}
+
+@media(min-width:992px){
+
+    .broshure-section{
+        padding:70px 0;
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .broshure-section{
+        padding:85px 0;
+    }
+
+}

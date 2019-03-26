@@ -483,21 +483,21 @@ footer {
 .lead-slider-wrapper {
   position: relative; }
   .lead-slider-wrapper .hello {
-    padding: 200px 0;
+    padding: 170px 0;
     background-size: cover;
     background-position: center center; }
     .lead-slider-wrapper .hello p, .lead-slider-wrapper .hello h2 {
       font-family: "Roboto", sans-serif;
       margin-bottom: 35px;
-      font-size: 1.5rem; }
+      font-size: 1.3rem; }
     .lead-slider-wrapper .hello h2 {
-      font-size: 2.5rem;
+      font-size: 1.6rem;
       font-weight: 400;
       line-height: 1;
-      letter-spacing: 0.2em; }
+      letter-spacing: 0.1rem; }
     .lead-slider-wrapper .hello h3 {
       font-family: "Roboto", sans-serif;
-      font-size: 1.5rem !important;
+      font-size: 1.3rem !important;
       margin-bottom: 70px; }
     .lead-slider-wrapper .hello .text-warning {
       color: #178ec6 !important; }
@@ -571,13 +571,22 @@ footer {
       color: #178ec6 !important;
       font-size: 2.5rem; }
 
+@media (min-width: 576px) {
+  .lead-slider-wrapper .hello p, .lead-slider-wrapper .hello h2 {
+    font-size: 1.5rem; }
+  .lead-slider-wrapper .hello h2 {
+    font-size: 2.3rem !important;
+    line-height: 1.4;
+    letter-spacing: 0.5rem; }
+  .lead-slider-wrapper .hello h3, .lead-slider-wrapper .hello p {
+    font-size: 2rem !important; } }
 @media (min-width: 768px) {
   .lead-slider-wrapper .btn-slider {
     padding: 8px 37px; }
   .lead-slider-wrapper .hello h2 {
     font-size: 3rem !important;
     line-height: 1.4;
-    letter-spacing: 0.7em; }
+    letter-spacing: 0.5rem; }
   .lead-slider-wrapper .hello h3, .lead-slider-wrapper .hello p {
     font-size: 2rem !important; } }
 @media (min-width: 992px) {
@@ -787,5 +796,27 @@ footer {
     font-size: 1.75rem;
     font-weight: 700;
     text-transform: uppercase; }
+
+.broshure-section {
+  padding: 30px 0; }
+  .broshure-section .brochure-tittle {
+    border-top: 3px solid rgba(138, 185, 87, 0.8);
+    background: linear-gradient(90deg, #c1c1c1 0%, #ffffff 100%); }
+    .broshure-section .brochure-tittle h2 {
+      padding: 11px;
+      color: #25282A;
+      font-size: 1.5rem; }
+  .broshure-section .broshure-article a img {
+    box-shadow: 10px 10px 5px #888; }
+
+@media (min-width: 768px) {
+  .broshure-section {
+    padding: 50px 0; } }
+@media (min-width: 992px) {
+  .broshure-section {
+    padding: 70px 0; } }
+@media (min-width: 1200px) {
+  .broshure-section {
+    padding: 85px 0; } }
 
 /*# sourceMappingURL=theme.css.map */

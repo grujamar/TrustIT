@@ -13,30 +13,24 @@ and open the template in the editor.
         <meta name="author" content="Marko Grujic - PIS">
         <meta name="description" content="">
         <meta name="keywords" content="">
-
         <!--iOS compatibile-->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-title" content="TrustIT">
         <link rel="apple-touch-icon" href="img/logo/apple-icon-60x60.png">        
-
         <!--Android compatibile-->
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="aplication-name" content="TrustIT">
         <link rel="icon" type="icon/png" href="img/logo/android-icon-48x48.png">
-
         <!--FONTOVI-->
         <!--Awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
         <!--bootstrap-->
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-
         <!--external css, like plugins ...-->
         <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
         <link href="css/form-validation.css" rel="stylesheet" type="text/css"/>
         <link href="css/animation.css" rel="stylesheet" type="text/css"/>
         <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
-
         <!--theme css-->
         <link href="css/theme.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -44,7 +38,7 @@ and open the template in the editor.
         <!--header start-->
         <header class="py-2 py-lg-4 fixed-top">
             <div class="container-fluid">
-                <nav class="navbar navbar-expand-md navbar-light px-0">
+                <nav class="navbar navbar-expand-md navbar-light px-0" id="main-menu1">
                     <!--logo start-->
                     <a class="navbar-brand" href="http://localhost:8383/TrustIT/index.html">
                         <img src="img/logo/Logo negativ.png" alt="Logo"/>
@@ -60,7 +54,7 @@ and open the template in the editor.
                     <div class="collapse navbar-collapse" id="main-menu">
                         <ul class="navbar-nav ml-auto mt-2">
                             <li class="nav-item">
-                                <a class="nav-link" href="http://localhost:8383/TrustIT/index.html">početna <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" id="scrollLinkHome">početna <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#about-us">o nama</a>
@@ -69,7 +63,7 @@ and open the template in the editor.
                                 <a class="nav-link" href="#partners">partneri</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">brošure</a>
+                                <a class="nav-link" href="#broshure">brošure</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#gallery">galerija</a>
@@ -103,11 +97,11 @@ and open the template in the editor.
                             </div>
                         </div>
                     </li>
-                    <li class="hello position-relative" style="background-image:linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(img/slider3.jpeg)">
+                    <li class="hello position-relative" style="background-image:linear-gradient(to right, rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(img/slider5.jpg)">
                         <div class="container">
                             <p class="text-center text-white">TrustIT</p>
                             <h2 class="text-center text-white text-uppercase">dokument menadžment</h2>
-                            <h3 class="text-center text-white animation" data-animation="zoom">
+                            <h3 class="text-center text-white">
                                 TrustIT is a <span class="text-warning">slightly wonky</span> landing page template
                             </h3> 
                             <div class="lead-slider-links text-center">
@@ -116,11 +110,11 @@ and open the template in the editor.
                             </div>
                         </div>
                     </li>
-                    <li class="hello position-relative" style="background-image:linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(img/slider5.jpg)">
+                    <li class="hello position-relative" style="background-image:linear-gradient(to right, rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(img/slider6.jpg)">
                         <div class="container">
                             <p class="text-center text-white">TrustIT</p>
                             <h2 class="text-center text-white text-uppercase">smart card rešenja</h2>
-                            <h3 class="text-center text-white animation" data-animation="zoom">
+                            <h3 class="text-center text-white">
                                 TrustIT is a <span class="text-warning">slightly wonky</span> landing page template
                             </h3> 
                             <div class="lead-slider-links text-center">
@@ -141,10 +135,10 @@ and open the template in the editor.
                     </div>
                     <ul class="list-unstyled pb-4">
                         <li>
-                            <div class="d-flex align-items-center animation" data-animation="slideUp" data-delay="0.4s">
-                                <span class="w-20 fa fa-id-card-o text-center">
+                            <div class="d-flex align-items-center">
+                                <span class="w-20 fa fa-long-arrow-right text-center animation" data-animation="slideRight" data-delay="0.1s">
                                 </span>
-                                <p class="w-80">
+                                <p class="w-80 animation" data-animation="slideLeft" data-delay="0.1s">
                                     Naša kompanija, TrustIT d.o.o. se uspešno bavi razvojem, implementacijom, integracijom i 
                                     održavanjem dokument menadžment, ECM i BPM sistema, rešenjima 
                                     za arhiviranje i mikrofilmovanje dokumentacije, kao i rešenjima 
@@ -153,10 +147,10 @@ and open the template in the editor.
                             </div>
                         </li>
                         <li>
-                            <div class="d-flex align-items-center animation" data-animation="slideUp" data-delay="0.7s">
-                                <span class="w-20 fa fa-desktop text-center">
+                            <div class="d-flex align-items-center">
+                                <span class="w-20 fa fa-long-arrow-right text-center animation" data-animation="slideRight" data-delay="0.4s">
                                 </span>
-                                <p class="w-80">
+                                <p class="w-80 animation" data-animation="slideLeft" data-delay="0.4s">
                                     Misija kompanije TrustIT d.o.o. je da u budućnosti kao i do 
                                     sada pruža visok kvalitet i pouzdanost svojih proizvoda i usluga 
                                     i da trasira put razvoja informacionih tehnologija na domaćem i 
@@ -166,10 +160,10 @@ and open the template in the editor.
                             </div>
                         </li>
                         <li>
-                            <div class="d-flex align-items-center animation" data-animation="slideUp" data-delay="1.1s">
-                                <span class="w-20 fa fa-laptop text-center">
+                            <div class="d-flex align-items-center">
+                                <span class="w-20 fa fa-long-arrow-right text-center animation" data-animation="slideRight" data-delay="0.7s">
                                 </span>
-                                <p class="w-80">
+                                <p class="w-80 animation" data-animation="slideLeft" data-delay="0.7s">
                                     Vizija kompanije TrustIT d.o.o. je osvajanje vodećih 
                                     tržišnih pozicija u oblastima fizičkog skladištenja 
                                     papirne arhive, skeniranja dokumentacije, dokument 
@@ -180,10 +174,10 @@ and open the template in the editor.
                             </div>
                         </li>
                         <li>
-                            <div class="d-flex align-items-center animation" data-animation="slideUp" data-delay="1.5s">
-                                <span class="w-20 fa fa-id-card-o text-center">
+                            <div class="d-flex align-items-center">
+                                <span class="w-20 fa fa-long-arrow-right text-center animation" data-animation="slideRight" data-delay="1.1s">
                                 </span>
-                                <p class="w-80">
+                                <p class="w-80 animation" data-animation="slideLeft" data-delay="1.1s">
                                     Delatnost naše kompanije obuhvata sve sfere ECM sistema za 
                                     upravljanje i trajno arhiviranje dokumentacije, za automatizaciju 
                                     i modelovanje poslovnih procesa, kao i sisteme za izradu i 
@@ -210,7 +204,7 @@ and open the template in the editor.
                             <p class="text-white">
                                 Recite nam svoje misli, ideje i vizije i pustite 
                                 TrustIT da analizira i utvrdi vaše potrebe da Vam 
-                                predstavi mogucćnosti da preduzmete sledecće korake 
+                                predstavi mogucćnosti da preduzmete sledeće korake 
                                 da pretvorite vaš koncept u stvarnost!
                             </p>
                             <p class="text-white">
@@ -373,8 +367,37 @@ and open the template in the editor.
                 </div>
             </section><!--partners section end-->
             <!--brochure start-->
-            <section class="brochure">
-
+            <section class="broshure-section" id="broshure">
+                <div class="container">
+                    <div class="brochure-tittle position-relative border-top-linear-gradient mb-3 mb-md-5">
+                        <h2 class="text-uppercase text-left mb-0">
+                            brošure
+                        </h2>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <article class="broshure-article">
+                                <a href="https://pis.rs/wp-content/uploads/2013/08/PIS_katalog_2017_ver-web.pdf" target="_blank">
+                                   <img src="img/broshure/brosure_pis_en_1.png" alt="brosure_pis_en_1"/> 
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <article class="broshure-article">
+                                <a href="https://pis.rs/wp-content/uploads/2015/dokumenta-documents/PIS-sredovanje_dokumentacije_2015_ENG-web.pdf" target="_blank">
+                                   <img src="img/broshure/brosure_pis_en_2.png" alt="brosure_pis_en_2"/> 
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <article class="broshure-article">
+                                <a href="https://pis.rs/wp-content/uploads/2016/12/PIS-brosura-kartice-dec2016.pdf" target="_blank">
+                                   <img src="img/broshure/brosure_pis_en_31.png" alt="brosure_pis_en_3"/> 
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
             </section><!--brochure end-->
             <!-- gallery start -->
             <section class="gallery-section text-center py-3 py-lg-5" id="gallery">
@@ -514,7 +537,7 @@ and open the template in the editor.
                             <article>
                                 <p class="d-flex text-contact"> <span class="fa fa-map-marker fa-2x mr-2"></span> TrustIT d.o.o. Simina 1, 11000 Beograd, Srbija
                                 </p>
-                                <p class="d-flex align-items-center text-contact"><span class="fa fa-envelope-o fa-2x text-contact mr-2"></span><a href="mailto:office@pis.rs" class="text-contact">office@trustit.rs</a></p>
+                                <p class="d-flex align-items-center text-contact"><span class="fa fa-envelope-o fa-2x text-contact mr-2"></span><a href="mailto:office@trustit.rs" class="text-contact">office@trustit.rs</a></p>
                                 <p class="d-flex align-items-center text-contact"><span class="fa fa-phone text-white fa-2x mr-2 text-contact"></span>011 328 33 10</p>
                             </article>
                         </div>
@@ -541,7 +564,7 @@ and open the template in the editor.
                                 <a href="#partners">partneri</a>
                             </li>
                             <li>
-                                <a href="#">brošure</a>
+                                <a href="#broshure">brošure</a>
                             </li>
                             <li>
                                 <a href="#gallery">galerija</a>
