@@ -39,6 +39,10 @@ $(document).ready(function () {
         return false;
     });
 
+    // close hamburger menu after click a
+    $('.navbar-nav li a').on("click", function () {
+        $('.navbar-toggler').click();
+    });
 
     /*
      //FILL ELEMENTS DEPENDS OF CATEGORY
@@ -71,7 +75,7 @@ $(document).ready(function () {
         $('.animation').each(function () {
             var position = $(this).offset().top;
 
-            if (position < scrollDown + windowHeight-60) {
+            if (position < scrollDown + windowHeight - 60) {
                 var animacija = $(this).attr('data-animation');
                 var delay = $(this).attr('data-delay');
                 $(this).css('animation-delay', delay);
