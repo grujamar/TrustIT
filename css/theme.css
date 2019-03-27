@@ -11,6 +11,9 @@ a, a:hover {
 body {
   position: relative; }
 
+#scroll {
+  margin-bottom: 40px; }
+
 .img-holder {
   position: relative;
   background: #ccc url("assets/logo-small.png") no-repeat center center;
@@ -439,7 +442,7 @@ footer {
         font-size: 1rem; }
       footer .cover .cover-article .cover-link,
       footer .cover .cover-article1 .cover-link {
-        font-size: 2rem; }
+        font-size: 1.6rem; }
       footer .cover .cover-article .fa,
       footer .cover .cover-article1 .fa {
         font-size: 2.5rem;
@@ -452,7 +455,10 @@ footer {
     padding-top: 160px; }
   footer .footer-navigation li a {
     font-size: 1rem;
-    padding: 6px; } }
+    padding: 6px; }
+  footer .cover .cover-article .cover-link,
+  footer .cover .cover-article1 .cover-link {
+    font-size: 2rem; } }
 @media (min-width: 768px) {
   footer img {
     padding-top: 120px;
@@ -584,7 +590,7 @@ footer {
   .lead-slider-wrapper .btn-slider {
     padding: 8px 37px; }
   .lead-slider-wrapper .hello h2 {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
     line-height: 1.4;
     letter-spacing: 0.5rem; }
   .lead-slider-wrapper .hello h3, .lead-slider-wrapper .hello p {

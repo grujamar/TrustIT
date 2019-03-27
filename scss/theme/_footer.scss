@@ -64,7 +64,7 @@ footer{
             }
 
             .cover-link{
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
             .fa{
                 font-size: 2.5rem;
@@ -85,12 +85,22 @@ footer{
         img{
             padding-top: 160px;
         }
-        
+
         .footer-navigation{
             li{
                 a{
                     font-size: 1rem;
                     padding:6px;
+                }
+            }
+        }
+
+        .cover{
+            .cover-article,
+            .cover-article1{
+
+                .cover-link{
+                    font-size: 2rem;
                 }
             }
         }
@@ -104,7 +114,7 @@ footer{
             padding-top: 120px;
             max-width: 170px; 
         }
-        
+
         .footer-navigation{
             li{
                 a{
