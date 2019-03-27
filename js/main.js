@@ -34,6 +34,10 @@ $(document).ready(function () {
         $("html, body").animate({scrollTop: 0}, 600);
         return false;
     });
+    $('#scrollLinkHome1').click(function () {
+        $("html, body").animate({scrollTop: 0}, 600);
+        return false;
+    });
 
 
     /*
