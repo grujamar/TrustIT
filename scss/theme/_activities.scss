@@ -1,0 +1,29 @@
+
+.line-left:after{
+    margin-right: auto;
+}
+
+.section-activities{
+    padding: 90px 0;
+
+    .activities-tittle{
+        h2{
+            font-size: 2rem;
+            font-family: $font-roboto;
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    .activities-item{
+        a{
+            text-decoration: none;
+            p{
+                font-family: $font-roboto;
+                font-size: 1rem;
+                color: $gray-900;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+

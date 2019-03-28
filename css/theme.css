@@ -503,7 +503,7 @@ footer {
       letter-spacing: 0.1rem; }
     .lead-slider-wrapper .hello h3 {
       font-family: "Roboto", sans-serif;
-      font-size: 1.3rem !important;
+      font-size: 1.4rem !important;
       margin-bottom: 70px; }
     .lead-slider-wrapper .hello .text-warning {
       color: #178ec6 !important; }
@@ -876,5 +876,21 @@ footer {
 
   .image-section .cover-image .image-paragraph p {
     font-size: 2.5rem; } }
+.line-left:after {
+  margin-right: auto; }
+
+.section-activities {
+  padding: 90px 0; }
+  .section-activities .activities-tittle h2 {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700; }
+  .section-activities .activities-item a {
+    text-decoration: none; }
+    .section-activities .activities-item a p {
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      color: #212529;
+      margin-bottom: 0; }
 
 /*# sourceMappingURL=theme.css.map */
