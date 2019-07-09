@@ -893,4 +893,26 @@ footer {
       color: #212529;
       margin-bottom: 0; }
 
+.bg-about-us-gray {
+  background: #e9ecef; }
+
+.about-us-section {
+  background: #e9ecef;
+  margin: 90px 0; }
+  .about-us-section h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700; }
+  .about-us-section h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700; }
+  .about-us-section p {
+    font-family: "Roboto", sans-serif; }
+
+@media (min-width: 576px) {
+  .about-us-section {
+    margin: 120px 0; } }
+@media (min-width: 768px) {
+  .about-us-section {
+    margin: 150px 0; } }
+
 /*# sourceMappingURL=theme.css.map */

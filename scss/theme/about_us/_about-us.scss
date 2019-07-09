@@ -1,0 +1,42 @@
+
+
+$about-us-bg: $gray-200;
+
+.bg-about-us-gray{
+    background:$about-us-bg;
+}
+
+.about-us-section{
+    
+    background:$about-us-bg;
+    margin: 90px 0;
+    
+    h1{
+        font-family: $font-roboto;
+        font-weight: $font-weight-bold;
+    }
+    
+    h3{
+        font-family: $font-roboto;
+        font-weight: $font-weight-bold;  
+    }
+    
+    p{
+        font-family: $font-roboto;
+    }
+}
+
+
+@media(min-width:576px){
+    
+    .about-us-section{
+        margin: 120px 0;
+    }
+}
+
+@media(min-width:768px){
+    
+    .about-us-section{
+        margin: 150px 0;
+    }
+}
