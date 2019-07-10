@@ -910,9 +910,17 @@ footer {
 
 @media (min-width: 576px) {
   .about-us-section {
-    margin: 120px 0; } }
-@media (min-width: 768px) {
-  .about-us-section {
-    margin: 150px 0; } }
+    margin: 110px 0; } }
+.lead-section {
+  padding: 80px 0; }
+  .lead-section h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700; }
+  .lead-section p {
+    font-family: "Roboto", sans-serif; }
+
+@media (min-width: 576px) {
+  .lead-section {
+    padding: 120px 0; } }
 
 /*# sourceMappingURL=theme.css.map */

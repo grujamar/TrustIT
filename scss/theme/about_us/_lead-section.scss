@@ -1,0 +1,25 @@
+
+
+.lead-section{
+    
+    padding: 80px 0;
+    
+    
+    h1{
+        font-family: $font-roboto;
+        font-weight: $font-weight-bold;
+    }
+    
+    
+    p{
+        font-family: $font-roboto;
+    }
+}
+
+
+@media(min-width:576px){
+    
+    .lead-section{
+        padding: 120px 0;
+    }
+}
