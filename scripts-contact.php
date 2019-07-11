@@ -17,6 +17,11 @@ $thankyou_page = "successfuly_send_message.html";
 This next bit loads the form field data into variables.
 If you add a form field, you will need to add it here.
 */
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+// More headers
+$headers .= 'From: <office@trustit.rs>' . "\r\n";
 $email_address = $_REQUEST['email'] ;
 $comments = $_REQUEST['message'] ;
 $first_name = $_REQUEST['name'] ;
@@ -69,7 +74,8 @@ header( "Location: $error_page" );
 // If we passed all previous tests, send the email then redirect to the thank you page.
 else {
 
-	mail( "$webmaster_email", "Feedback Form Results", $msg );
+
+	mail( "$webmaster_email", "You have new email from TrustIT.rs site", $msg, $headers);
 
 	header( "Location: $thankyou_page" );
 }
